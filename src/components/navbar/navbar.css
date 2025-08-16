@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: white;
+  padding: 0;
+  display: block;
+}
+
+/* Navbar */
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Logo | Menú | Iconos */
+  align-items: center;
+  column-gap: 40px;
+  max-width: 1280px;      /* 👈 ahora más ancho */
+  margin: 0 auto;         /* centrado */
+  padding: 20px 0;
+  background-color: white;
+  border-bottom: 1px solid #e4e4e4;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-weight: 700;
+  font-size: 24px;
+  color: #1d2026;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;   /* separación entre links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #69707D;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1d2026;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 28px; /* separación carrito/usuario */
+  align-items: center;
+}
+
+.desktop-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  background: none;
+  color: #1d2026;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    display: none;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .desktop-icons {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    order: -1;
+    margin-right: auto;
+  }
+}
