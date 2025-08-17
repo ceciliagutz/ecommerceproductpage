@@ -52,6 +52,13 @@ const imagenes = [producto.imagenes.principal, ...producto.imagenes.miniaturas];
         </div>
       </div>
 
+      <div className="carrusel-responsivo">
+        <button onClick={anteriorImagen} className="flecha-carrusel"><FaChevronLeft /></button>
+      
+      <img src={imagenes[indiceImagen]} alt="Producto" className="imagen-carrusel"
+      onClick={() => abrirLightbox(indiceImagen)}/>
+      <button onClick={siguienteImagen} className='flecha-carrusel'><FaChevronRight/></button>
+    </div>
       <div className="detalle-info">
         <h3 className="marca">{producto.marca}</h3>
         <h2 className="nombre">{producto.nombre}</h2>
@@ -66,7 +73,7 @@ const imagenes = [producto.imagenes.principal, ...producto.imagenes.miniaturas];
           )}
         </div>
         <p className="descripcion">{producto.descripcion}</p>
-
+<div className="carrito">
         <div className="cantidad">
           <button onClick={decrementar}>-</button>
           <span>{cantidad}</span>
@@ -79,6 +86,7 @@ const imagenes = [producto.imagenes.principal, ...producto.imagenes.miniaturas];
         >
           <FaShoppingCart/> Agregar al carrito
         </button>
+      </div>
       </div>
       
       {lightboxAbierto && (
