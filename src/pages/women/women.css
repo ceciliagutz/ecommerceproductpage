@@ -1,0 +1,45 @@
+.carrito-icono {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: #333;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.contador {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrito-desplegable {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 250px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.carrito-desplegable ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carrito-desplegable li {
+  margin-bottom: 8px;
+}
