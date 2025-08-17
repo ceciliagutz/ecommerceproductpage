@@ -14,13 +14,16 @@ const Women = () => {
       {products.map((prod) => (
         <TarjetaProducto
           key={prod.id}
+          id={prod.id}
           nombre={prod.nombre}
           marca={prod.marca}
           precio={prod.precio}
           precioOriginal={prod.precioOriginal}
           descripcion={prod.descripcion}
           imagenPrincipal={prod.imagenes.principal}
+          descuento={prod.descuento}
           onAddToCart={handleAddToCart}
+          
         />
       ))}
     </div>

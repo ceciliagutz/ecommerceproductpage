@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import './tarjetaProducto.css';
+import { Link } from "react-router-dom";
 
-const TarjetaProducto = ({ nombre, marca, precio, precioOriginal, descripcion, imagenPrincipal, descuento=0, onAddToCart }) => {
+const TarjetaProducto = ({ id, nombre, marca, precio, precioOriginal, descripcion, imagenPrincipal, descuento=0, onAddToCart }) => {
     const [cantidad, setCantidad] = useState(0);
     const precioDescuento = precio - (precio * descuento) / 100;
 
@@ -11,8 +12,9 @@ const TarjetaProducto = ({ nombre, marca, precio, precioOriginal, descripcion, i
 
     return (
         <div className="tarjeta-producto">
+            <Link to={`/producto/${id}`}>
             <img src={imagenPrincipal} alt={nombre} className="imagen-principal"/>
-
+            </Link>
             <div className="informacion">
                 <h3 className="marca">{marca}</h3>
                 <h2 className="nombre">{nombre}</h2>
