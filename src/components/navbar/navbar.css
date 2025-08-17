@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Kumbh Sans', sans-serif;
-  background-color: white;
+  background-color: #ffffff;
   padding-top: 80px;
 }
 
@@ -82,16 +82,30 @@ body {
   margin-left: -15px;
 
 }
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
+.boton-carrito {
   background: none;
   border: none;
-  color: #1d2026;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+
 }
-.close-menu {
-  display: none;
+.icon-carrito{
+  position: relative;
+  display: inline-block;
+}
+.carrito-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+  min-width: 18px;
+  text-align: center;
 }
 
 .carrito-desplegable {
@@ -103,7 +117,7 @@ body {
   background-color: white;
   border: 1px solid #c3cad9;
   border-radius: 10px;
-  box-shadow: 0 5px 20px white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   padding: 15px;
   overflow-y: auto;
   z-index: 1000;
@@ -116,22 +130,54 @@ body {
   margin-bottom: 10px;
   font-size: 14px;
 }
+.btn-ver-carrito {
+  width: 100%;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.item-imagen {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.item-detalles {
+  display: flex;
+  flex-direction: column;
+}
 
+.item-nombre {
+  font-weight: 600;
+}
+
+.item-precio {
+  font-size: 13px;
+  color: #69707d;
+}
+.btn-ver-carrito:hover {
+  background-color: #ff7e1b;
+}
 .carrito-vacio {
   text-align: center;
-  color: #888;
+  color: #69707D;
   font-size: 14px;
 }
 
-.carrito-count {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background-color: #ff6600;
-  color: white;
-  font-size: 12px;
-  padding: 2px 6px;
-  border-radius: 50%;
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #1d2026;
+}
+.close-menu {
+  display: none;
 }
 
 

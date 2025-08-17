@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaShoppingCart, FaUserCircle, FaBars, FaTimes } from "react-icons/fa";
 import "./navbar.css";
 
-function Navbar({ carrito, setCarrito }) {
+function Navbar({ carrito }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [carritoOpen, setCarritoOpen] = useState(false);
 
@@ -33,7 +33,7 @@ function Navbar({ carrito, setCarrito }) {
           </ul>
         </div>
         <div className="nav-icons">
-          <button onClick={toggleCarrito} aria-label="Carrito de compras" className="boton-carrito">
+          <button className="boton-carrito" onClick={toggleCarrito}>
             <FaShoppingCart size={22} color="#69707d" />
             {carrito.length > 0 && (
               <span className="carrito-count">
@@ -42,22 +42,33 @@ function Navbar({ carrito, setCarrito }) {
             )}
           </button>
 
+
           <Link to="/profile" aria-label="Perfil">
             <FaUserCircle size={22} color="#69707d" />
           </Link>
         </div>
       </div>
 
+
       {carritoOpen && (
         <div className="carrito-desplegable">
           {carrito.length === 0 ? (
-            <p className="carrito-vacio">Tu carrito esta vacío</p>
-          ) : (carrito.map((item, index) => (
-            <div key={index} className="item-carrito">
-              <span>{item.nombre}</span>
-              <span>{item.cantidad} x ${item.precio}</span>
-            </div>
-          ))
+            <p className="carrito-vacio">Tu carrito está vacío</p>
+          ) : (
+            <>
+              {carrito.map((item, index) => (
+                <div key={index} className="item-carrito">
+                  <img src={item.imagen} alt={item.nombre} className="item-imagen" />
+                  <div className="item-detalles">
+                    <span className="item-nombre">{item.nombre}</span>
+                    <span className="item-precio">
+                      ${item.precio}.00 x {item.cantidad} = ${item.precio * item.cantidad}.00
+                    </span>
+                  </div>
+                </div>
+              ))}
+              <button className="btn-ver-carrito">Ver carrito</button>
+            </>
           )}
         </div>
       )}

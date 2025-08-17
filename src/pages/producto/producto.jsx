@@ -82,7 +82,7 @@ const imagenes = [producto.imagenes.principal, ...producto.imagenes.miniaturas];
 
         <button
           className="btn-agregar"
-          onClick={() => onAddToCart(producto.nombre, cantidad, precioDescuento)}
+          onClick={() => onAddToCart(producto.nombre, cantidad, precioDescuento, imagenActual)}
         >
           <FaShoppingCart/> Agregar al carrito
         </button>

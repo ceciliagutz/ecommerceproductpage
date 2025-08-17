@@ -37,7 +37,7 @@ const TarjetaProducto = ({ id, nombre, marca, precio, precioOriginal, descripcio
 
                 <button
                     className="btn-agregar"
-                    onClick={() => onAddToCart(nombre, cantidad, precioDescuento)}
+                    onClick={() => onAddToCart(nombre, cantidad, precioDescuento, imagenPrincipal)}
                 >
                     <FaShoppingCart/> Agregar al carrito
                 </button>
