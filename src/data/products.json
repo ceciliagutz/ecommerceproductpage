@@ -4,11 +4,12 @@
     "marca": "SNEAKER COMPANY",
     "nombre": "Fall Limited Edition Sneakers",
     "descripcion": "These low-profile are your perfect casual wear companion. Featuring an adorable rubber outer sole, they'll withstand everything the weather can offer.",
-    "precio": 125,
+    "precio": 250,
     "precioOriginal": 250,
+    "descuento": 50,
     "imagenes": {
       "principal": "/imagenes/TenisPrincipal.png",
-      "minuaturas": [
+      "miniaturas": [
         "/imagenes/TenisSeleccion.png",
         "/imagenes/Tenis1.png",
         "/imagenes/Tenis2.png",
@@ -21,11 +22,12 @@
     "marca": "SNEAKER COMPANY",
     "nombre": "Fall Limited Edition Sneakers",
     "descripcion": "These low-profile are your perfect casual wear companion. Featuring an adorable rubber outer sole, they'll withstand everything the weather can offer.",
-    "precio": 125,
+    "precio": 250,
     "precioOriginal": 250,
+    "descuento": 50,
     "imagenes": {
       "principal": "/imagenes/TenisPrincipal.png",
-      "minuaturas": [
+      "miniaturas": [
         "/imagenes/TenisSeleccion.png",
         "/imagenes/Tenis1.png",
         "/imagenes/Tenis2.png",
@@ -38,11 +40,12 @@
     "marca": "SNEAKER COMPANY",
     "nombre": "Fall Limited Edition Sneakers",
     "descripcion": "These low-profile are your perfect casual wear companion. Featuring an adorable rubber outer sole, they'll withstand everything the weather can offer.",
-    "precio": 125,
+    "precio": 250,
     "precioOriginal": 250,
+    "descuento": 50,
     "imagenes": {
       "principal": "/imagenes/TenisPrincipal.png",
-      "minuaturas": [
+      "miniaturas": [
         "/imagenes/TenisSeleccion.png",
         "/imagenes/Tenis1.png",
         "/imagenes/Tenis2.png",
