@@ -1,0 +1,102 @@
+.producto-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.producto-imagen {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.producto-info {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.producto-marca {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #69707d;
+    letter-spacing: 2px;
+}
+
+.producto-nombre {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1d2026;
+}
+
+.producto-precio {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.precio-desc {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.descuento {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ff7d1a;
+}
+
+.precioOriginal {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: #b6bcc8;
+}
+
+.producto-descripcion {
+    font-size: 1rem;
+    color: #69707d;
+    line-height: 1.5;
+}
+
+.btn-agregar {
+    margin-top: 1rem;
+    background-color: #ff7d1a;
+    color: #1d2026;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.btn-agregar:hover {
+    background-color: #ff9c55;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .producto-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto-imagen {
+        width: 100%;
+        height: auto;
+    }
+
+    .producto-info {
+        max-width: 90%;
+    }
+}
