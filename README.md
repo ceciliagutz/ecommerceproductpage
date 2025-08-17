@@ -1,6 +1,6 @@
 ✨ Sneaker Company ✨
 ---
-Deploy actual: https://whimsical-axolotl-273872.netlify.app/women
+Deploy actual: https://whimsical-axolotl-273872.netlify.app
 Figma: https://www.figma.com/design/Tq6LUDwF6Dp0dDqXnoGwit/ecommerce-product-page?m=auto&t=y1DquufHYlk1AT7I-1
 Figma/Propuesta: https://www.figma.com/proto/Tq6LUDwF6Dp0dDqXnoGwit/ecommerce-product-page?node-id=6138-835&t=xyvQ65rHXwbloruZ-1&scaling=min-zoom&content-scaling=fixed&page-id=6138%3A44&starting-point-node-id=6138%3A835
 Código en GitHub: https://github.com/ceciliagutz/ecommerceproductpage
