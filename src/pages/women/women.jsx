@@ -1,5 +1,5 @@
 import React from 'react';
-import TarjetaProducto from '../../components/tarjeta_productos/tarjetaProductos';
+import TarjetaProducto from '../../components/tarjeta_productos/tarjetaProductos.jsx';
 import products from '../../data/products.json';
 import './women.css';
 

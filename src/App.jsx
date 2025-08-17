@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/navbar';
+import Navbar from './components/navbar/navbar';
 import Women from './pages/women/women';
 import Producto from './pages/producto/producto';
 import { useState } from 'react';
