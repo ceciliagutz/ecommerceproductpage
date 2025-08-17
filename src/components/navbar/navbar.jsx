@@ -18,7 +18,7 @@ function Navbar({ carrito }) {
         </button>
 
         <div className="logo">
-          <Link to="/">sneakers</Link>
+          <Link to="/home.jsx">sneakers</Link>
         </div>
         <div className="nav-left">
           <ul className={`nav-links ${menuOpen ? "active" : ""}`} >

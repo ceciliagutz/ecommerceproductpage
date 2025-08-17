@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/navbar';
 import Women from './pages/women/women';
 import Producto from './pages/producto/producto';
 import { useState } from 'react';
+import Home from './pages/home';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
     <>
       <Navbar carrito={carrito} setCarrito={setCarrito}/>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/women" element={<Women onAddToCart={handleAddToCart} />} />
         <Route path="/producto/:id" element={<Producto onAddToCart={handleAddToCart} />} />
       </Routes>
